@@ -30,7 +30,7 @@ export default function AboutPreview() {
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              Founded in 2014 by a director and a creative producer, Montage Filims is a small,
+              Founded in 2014 by a director and a creative producer, Montage Films is a small,
               intentional house. We accept a limited number of weddings each year so every
               celebration receives our complete imagination.
             </p>
@@ -42,9 +42,9 @@ export default function AboutPreview() {
           <Reveal delay={0.3}>
             <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-10">
               {[
-                { n: "12+", l: "Years" },
-                { n: "240", l: "Weddings" },
-                { n: "32", l: "Countries" },
+                { n: "3+", l: "Years" },
+                { n: "100", l: "Weddings" },
+                { n: "2", l: "States" },
               ].map((s) => (
                 <div key={s.l}>
                   <div className="font-display text-4xl text-gold md:text-5xl">{s.n}</div>

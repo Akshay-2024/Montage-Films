@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Link to="/" className="flex items-baseline gap-2">
               <span className="font-display text-3xl">Montage</span>
-              <span className="text-[0.65rem] uppercase tracking-[0.4em] text-gold">Filims</span>
+              <span className="text-[0.65rem] uppercase tracking-[0.4em] text-gold">Films</span>
             </Link>
             <p className="mt-6 max-w-md font-display text-2xl leading-snug text-ivory/80">
               Crafting timeless luxury weddings — designed, directed, remembered.
@@ -42,22 +42,22 @@ export default function Footer() {
           <div className="md:col-span-4">
             <div className="eyebrow text-ivory/60">Atelier</div>
             <address className="mt-6 not-italic text-sm leading-relaxed text-ivory/80">
-              14 Heritage Lane, Suite 200<br />
-              Mumbai · Paris · Dubai<br />
-              <a href="mailto:hello@montagefilims.com" className="link-underline mt-3 inline-block text-gold">hello@montagefilims.com</a><br />
-              <span>+91 98765 43210</span>
+              Peyad, Thiruvananthapuram<br />
+              Thiruvananthapuram · Ernakulam · Kannur<br />
+              <a href="mailto:montagefilmsstudio@gmail.com" className="link-underline mt-3 inline-block text-gold">montagefilmsstudio@gmail.com</a><br />
+              <span>+91 9633319816 , 7306453038</span>
             </address>
             <div className="mt-6 flex gap-5">
-              <a href="#" aria-label="Instagram" className="text-ivory/70 hover:text-gold transition"><Instagram size={18} /></a>
-              <a href="#" aria-label="Facebook" className="text-ivory/70 hover:text-gold transition"><Facebook size={18} /></a>
+              <a href="https://www.instagram.com/montage__films/?__pwa=1" aria-label="Instagram" className="text-ivory/70 hover:text-gold transition"><Instagram size={18} /></a>
+              <a href="https://www.facebook.com/677659332097644?ref=PROFILE_EDIT_xav_ig_profile_page_web" aria-label="Facebook" className="text-ivory/70 hover:text-gold transition"><Facebook size={18} /></a>
               <a href="#" aria-label="YouTube" className="text-ivory/70 hover:text-gold transition"><Youtube size={18} /></a>
             </div>
           </div>
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-ivory/10 pt-8 text-[0.7rem] uppercase tracking-[0.3em] text-ivory/40 md:flex-row md:items-center">
-          <span>© {new Date().getFullYear()} Montage Filims. All rights reserved.</span>
-          <span>Designed with reverence.</span>
+          <span>© {new Date().getFullYear()} Montage Films. All rights reserved.</span>
+          <span>Designed by Akshay.</span>
         </div>
       </div>
     </footer>

@@ -29,7 +29,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.2} className="lg:col-span-7 space-y-6 text-base leading-relaxed text-muted-foreground">
             <p>
-              Montage Filims began in a small editing suite in Mumbai in 2014, when a film director and a
+              Montage Films began in a small editing suite in Mumbai in 2014, when a film director and a
               creative producer agreed on one principle: a wedding deserves the same reverence as a feature.
             </p>
             <p>
@@ -69,10 +69,10 @@ export default function About() {
       <section className="bg-obsidian py-24 text-ivory">
         <div className="container-luxe grid grid-cols-2 gap-10 text-center md:grid-cols-4">
           {[
-            { n: "12+", l: "Years" },
-            { n: "240", l: "Weddings" },
-            { n: "32", l: "Countries" },
-            { n: "60+", l: "Press features" },
+            { n: "3+", l: "Years" },
+            { n: "100", l: "Weddings" },
+            { n: "2", l: "States" },
+            { n: "30+", l: "Events" },
           ].map((s) => (
             <Reveal key={s.l}>
               <div className="font-display text-5xl text-gold md:text-6xl">{s.n}</div>

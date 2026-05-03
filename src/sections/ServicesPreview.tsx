@@ -16,7 +16,7 @@ export default function ServicesPreview() {
           <span className="eyebrow justify-center">The Atelier</span>
           <h2 className="mt-6 font-display text-4xl md:text-6xl">A house of <em className="text-gold">quiet</em> craft</h2>
           <p className="mt-6 text-muted-foreground">
-            Four disciplines, one signature. Every Montage Filims wedding is composed by the same hands
+            Four disciplines, one signature. Every Montage Films wedding is composed by the same hands
             from first conversation to final frame.
           </p>
         </Reveal>
