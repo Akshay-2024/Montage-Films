@@ -40,7 +40,7 @@ export default function Navbar() {
       <div className="container-luxe flex h-20 items-center justify-between md:h-24">
         <Link to="/" className="group flex items-baseline gap-2">
           <span className="font-display text-2xl tracking-wide md:text-3xl">Montage</span>
-          <span className="text-[0.65rem] uppercase tracking-[0.4em] text-gold">Filims</span>
+          <span className="text-[0.65rem] uppercase tracking-[0.4em] text-gold">Films</span>
         </Link>
 
         <nav className="hidden items-center gap-10 lg:flex">

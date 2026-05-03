@@ -26,7 +26,7 @@ export default function Hero() {
           transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
           className="text-[0.7rem] uppercase tracking-[0.4em] text-gold"
         >
-          Est. 2014  ·  Worldwide
+          Est. 2023  ·  South India
         </motion.span>
 
         <motion.h1

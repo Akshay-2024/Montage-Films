@@ -53,7 +53,7 @@ export default function Contact() {
                 <Field label="Email" name="email" type="email" required />
                 <Field label="Phone" name="phone" type="tel" required />
                 <Field label="Event Date" name="date" type="date" />
-                <Field label="Budget Range" name="budget" type="text" placeholder="e.g. $100k – $250k" className="md:col-span-2" />
+                <Field label="Budget Range" name="budget" type="text" placeholder="e.g. ₹65k – ₹150k" className="md:col-span-2" />
               </div>
               <Field label="Tell us about your wedding" name="message" textarea required />
               <button
@@ -73,15 +73,16 @@ export default function Contact() {
               <ul className="mt-10 space-y-6 text-sm text-muted-foreground">
                 <li className="flex items-start gap-4">
                   <MapPin size={18} className="mt-0.5 text-gold flex-shrink-0" />
-                  <span>14 Heritage Lane, Suite 200<br />Mumbai · Paris · Dubai</span>
+                  <span>Peyad, Thiruvananthapuram<br />Thiruvananthapuram · Ernakulam · Kannur</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <Mail size={18} className="mt-0.5 text-gold flex-shrink-0" />
-                  <a href="mailto:hello@montagefilims.com" className="link-underline">hello@montagefilims.com</a>
+                  <a href="mailto:hello@montagefilmsstudio@gmail.com" className="link-underline">montagefilmsstudio@gmail.com</a>
                 </li>
                 <li className="flex items-start gap-4">
                   <Phone size={18} className="mt-0.5 text-gold flex-shrink-0" />
-                  <a href="tel:+919876543210" className="link-underline">+91 98765 43210</a>
+                  <a href="tel:+919633319816" className="link-underline">+91 9633319816</a>
+                  <a href="tel:+917306453038" className="link-underline">+91 7306453038</a>
                 </li>
               </ul>
             </div>
@@ -89,7 +90,7 @@ export default function Contact() {
             <div className="mt-12 overflow-hidden border border-border">
               <iframe
                 title="Atelier location"
-                src="https://www.google.com/maps?q=Mumbai&output=embed"
+                src="https://www.google.com/maps?q=Peyad&output=embed"
                 width="100%"
                 height="280"
                 loading="lazy"
