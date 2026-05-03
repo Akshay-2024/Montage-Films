@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Montage Filims — Luxury Wedding Design System
+   All colors HSL. Editorial, cinematic, gold + ivory + obsidian. */
+
+@layer base {
+  :root {
+    /* Core palette */
+    --background: 36 30% 97%;          /* ivory */
+    --foreground: 30 12% 12%;          /* deep espresso */
+
+    --card: 36 30% 99%;
+    --card-foreground: 30 12% 12%;
+
+    --popover: 36 30% 99%;
+    --popover-foreground: 30 12% 12%;
+
+    --primary: 30 12% 12%;             /* obsidian */
+    --primary-foreground: 36 30% 97%;
+
+    --secondary: 36 22% 92%;
+    --secondary-foreground: 30 12% 12%;
+
+    --muted: 36 18% 90%;
+    --muted-foreground: 30 8% 38%;
+
+    --accent: 40 45% 53%;              /* champagne gold */
+    --accent-foreground: 30 15% 10%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 36 30% 97%;
+
+    --border: 36 14% 84%;
+    --input: 36 14% 84%;
+    --ring: 40 45% 53%;
+
+    --radius: 0.25rem;
+
+    /* Brand tokens */
+    --gold: 40 45% 53%;
+    --gold-soft: 40 38% 70%;
+    --gold-deep: 36 50% 38%;
+    --ivory: 36 30% 97%;
+    --obsidian: 30 14% 8%;
+    --taupe: 30 8% 38%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(var(--obsidian) / 0.15) 0%, hsl(var(--obsidian) / 0.55) 60%, hsl(var(--obsidian) / 0.85) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-soft)) 0%, hsl(var(--gold)) 50%, hsl(var(--gold-deep)) 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(var(--obsidian) / 0.7) 100%);
+    --gradient-fade: linear-gradient(180deg, hsl(var(--ivory)) 0%, hsl(36 22% 92%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 10px 40px -15px hsl(var(--obsidian) / 0.15);
+    --shadow-elegant: 0 30px 80px -30px hsl(var(--obsidian) / 0.35);
+    --shadow-gold: 0 20px 60px -20px hsl(var(--gold) / 0.45);
+
+    /* Motion */
+    --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .dark {
+    --background: 30 14% 8%;
+    --foreground: 36 30% 95%;
+    --card: 30 14% 10%;
+    --card-foreground: 36 30% 95%;
+    --popover: 30 14% 10%;
+    --popover-foreground: 36 30% 95%;
+    --primary: 40 45% 53%;
+    --primary-foreground: 30 14% 8%;
+    --secondary: 30 10% 14%;
+    --secondary-foreground: 36 30% 95%;
+    --muted: 30 10% 14%;
+    --muted-foreground: 36 14% 70%;
+    --accent: 40 45% 53%;
+    --accent-foreground: 30 14% 8%;
+    --border: 30 10% 18%;
+    --input: 30 10% 18%;
+    --ring: 40 45% 53%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  ::selection { background: hsl(var(--gold) / 0.3); }
+}
+
+@layer components {
+  .container-luxe { @apply mx-auto w-full max-w-[1400px] px-6 md:px-10 lg:px-16; }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.35em] text-muted-foreground font-medium;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply block h-px w-8 bg-accent;
+  }
+
+  .gold-divider {
+    @apply h-px w-16 bg-gradient-to-r from-transparent via-accent to-transparent;
+  }
+
+  .glass-card {
+    background: hsl(var(--ivory) / 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--gold) / 0.18);
+  }
+  .glass-dark {
+    background: hsl(var(--obsidian) / 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--gold) / 0.2);
+  }
+
+  .text-gold { color: hsl(var(--gold)); }
+  .bg-gold { background: hsl(var(--gold)); }
+  .bg-obsidian { background: hsl(var(--obsidian)); }
+  .text-ivory { color: hsl(var(--ivory)); }
+
+  .link-underline {
+    @apply relative inline-block;
+  }
+  .link-underline::after {
+    content: '';
+    @apply absolute left-0 -bottom-1 h-px w-full origin-right scale-x-0 bg-current transition-transform duration-500;
+    transition-timing-function: var(--ease-luxury);
+  }
+  .link-underline:hover::after { @apply origin-left scale-x-100; }
+
+  .image-zoom {
+    @apply overflow-hidden;
+  }
+  .image-zoom img {
+    transition: transform 1200ms var(--ease-luxury);
+  }
+  .image-zoom:hover img { transform: scale(1.06); }
+}
